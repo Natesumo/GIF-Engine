@@ -1,0 +1,29 @@
+$primarycolor: #162736;
+$secondarycolor: #203449;
+$accentcolor: #070C10;
+
+
+body, html {
+    height: 100%;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: $primarycolor;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gif {
+    margin: 1rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 8px;
+    border-color: $accentcolor;
+}
