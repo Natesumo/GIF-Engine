@@ -67,7 +67,7 @@ form {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: white;
+  color: #1e1e28;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -78,7 +78,7 @@ form {
 }
 
 .submit-button:hover {
-  background: #CC4949;
+  background: #CC6666;
 }
 
 .footer {

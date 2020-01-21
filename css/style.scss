@@ -3,7 +3,8 @@
 $primarycolor: rgb(30,30,40);
 $secondarycolor: #203449;
 $accentcolor: #CC6666;
-
+$light: white;
+//color scheme can be easily changed globally across whole site
 
 body, html {
     height: 100%;
@@ -41,14 +42,14 @@ form {
 }
 
 .input-field {
-    color:white;
+    color: $light;
     font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border:2px solid #CC6666;
+    border:2px solid $accentcolor;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -60,11 +61,11 @@ form {
 .submit-button {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 100%;
-    background:#CC6666;
+    background: $accentcolor;
     border-radius:5px;
     border:0;
     cursor:pointer;
-    color:white;
+    color: $primarycolor;
     font-size:24px;
     padding-top:10px;
     padding-bottom:10px;
@@ -73,7 +74,7 @@ form {
     font-weight:700;
 }
 .submit-button:hover {
-       background:#CC4949; 
+       background:$accentcolor; 
 }
 
 .footer {
@@ -84,7 +85,7 @@ form {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: fixed;            //fixed to bottom regardless of content on page
     height: 25px;
     right: 0;
     bottom: 0;
