@@ -6,20 +6,37 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<title>Title</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/js/script.js"></script>
+<title>GIF-Engine</title>
 </head>
 <body>
-<div class="search-form">
-    <input id="searchtext" type="text" placeholder="Search for GIFs">
-    <input id="gifamount" type="number" min="1" max="30" placeholder="How many GIFs 1-30?">
-    <button id="searchbutton" type="submit" onclick="getData()">Submit</button>
-</div>
+<nav class="navbar">
 
+    <div class="container">
+        
+        <h1 class="logo"><a href="#">GIF-Engine</a></h1>
+        <ul class="nav nav-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </div><!--/.container-->
+    
+</nav>
+
+<div class="search-form">
+    <input id="searchtext" class="input-field" type="text" placeholder="Search for GIFs">
+    <input id="gifamount" class="input-field"  type="number" min="1" max="30" placeholder="How many GIFs 1-30?">
+    <button id="searchbutton" class="submit-button" type="submit" onclick="getData()">Submit</button>
+</div>
 
 <div class="inner container"></div>
 
+<div class="footer">
+    <img class="footer-img" src="https://www.logolynx.com/images/logolynx/64/6485b6af9c4d77856bb2b7158b8d6db7.png" alt=""> Powered by GIPHY
+</div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="/js/script.js"></script>
 </body>
 </html>
